@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarSyllables31-Eng</title>
+</head>
+<body>
+  
+</body>
+</html>
+<html>
+<head>
+  <style>
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .column {
+      flex: 50%;
+      padding: 10px;
+      text-align: left;
+    }
+    p {
+      word-wrap: break-word;
+      text-indent: -20px;
+      padding-left: 20px;
+    }
+    .tab1 {
+      word-wrap: break-word;
+      padding-left: 20px;
+    }
+    .tab2 {
+      word-wrap: break-word;
+      padding-left: 40px;
+    }
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid silver;
+      font-size: 0.8em;
+    }
+    footer ol {
+      padding-left: 20px;
+    }
+    /**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+    article {
+      counter-reset: footnotes;
+    }
+    /**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+    [aria-describedby="footnote-label"] {
+      counter-increment: footnotes;
+      /* 1 */
+      text-decoration: none;
+      /* 2 */
+      color: inherit;
+      /* 2 */
+      cursor: default;
+      /* 2 */
+      outline: none;
+      /* 2 */
+    }
+    /**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+    [aria-describedby="footnote-label"]::after {
+      content: '[' counter(footnotes) ']';
+      /* 1 */
+      vertical-align: auto;
+      /* 2 */
+      font-size: 1em;
+      /* 3 */
+      margin-left: 2px;
+      /* 4 */
+      color: blue;
+      /* 5 */
+      text-decoration: underline;
+      /* 5 */
+      cursor: pointer;
+      /* 5 */
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    [aria-describedby="footnote-label"]::after {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    /**
+ * Resetting the default focused styles on the number
+ */
+    [aria-describedby="footnote-label"]:focus::after {
+      outline: thin dotted;
+      outline-offset: 2px;
+      color: brown;
+      font-weight: bold;
+    }
+    [aria-label="Back to content"] {
+      font-size: 1em;
+      color:darkblue; 
+    }
+    /**
+ * Highlight target note
+ */
+    footer :target {
+      background: lightgrey;
+    }
+    /**
+ * Visually hidden yet accessible content
+ */
+    .p {
+      color: brown;
+      font-style: italic;
+    }
+    #developedby {
+      font-style: italic;
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <BR>
+  <BR>
+  <center>श्रीसरस्वत्यै नमः <a id="TOP" href="#BOTTOM">&#x25BC</a></center>
+  <div class="hyperlink">
+    <p>CONTENT</p>
+    <p><a href="#COL">(A) Constitutional Law</a></p>
+    <p><a href="#ADL">(B) Administrative Law</a></p>
+    <p><a href="#INL">(B) International Law</a></p>
+    <p><a href="#CRL">(D) Criminal Law</a></p>
+    <p><a href="#CIL">(E) Civil Law</a></p>
+    <p><a href="#CML">(F) Commercial Law</a></p>
+    <p><a href="#EVL">(G) Evidence Law</a></p>
+    <p><a href="#PRL">(H) Procedure Law</a></p>
+    <p><a href="#CODE">(I) Nepal Law Practitioners Council and Code of Conduct for Law Practitioners</a></p>
+    <p><a href="#MISSIL">(J) Case File Study, draft of instruments and with Knowledge of Case File related
+        topics</a></p>
+  </div>
+  <div class="row">
+      <div class="column" style="background-color:#bbb;"><h2>Constitutional Law <a href="#TOP">&#x25B2</a></h2><p><b> 1.</b> Basic Principles of Constitution andConstitutionalism</p><p><b> 2.</b> Constitutional Development of Nepal</p><p><b> 3. </b> The Basic Features of Constitution of Nepal(2072)</p><p><b> 4.</b> Fundamental Rights, Duties and ConstitutionalRemedies</p><p><b> 5.</b> Justification and Limitation of Obligation of State,Directive Principles andPolicies</p><p><b> 6.</b> Basic Principles of Independent Judiciary</p><p><b> 7.</b> Contribution to the Supreme Court on ConstitutionalMatters</p><p><b> 8.</b> Constitutional Bench</p><p><b>9. </b> Public Interest Litigation</p><p><b> 10. </b> Judicial Review</p><p><b>11.</b> Constitutional Bodies of Nepal:</p><div class="tab1"><p><b> a.</b> Attorney General </p><p><b> b.</b> Election Commission</p><p><b> c.</b> Commission for Investigation of Abuse of Authority</p><p><b> d.</b> National Human Rights Commission</p><p><b> e.</b> National Commission for Women</p></div><p><b>12.</b> Jurisdiction and Interrelation of Federation, Province &Local Government inFederal Nepal</p><p><b> 13.</b> Basic Principle and Process of Amendment of theConstitution</p><p></div>
+  </div>
+  <div class="row">
+<div class="column" style="background-color:#bbb;"><h2>Administrative Law <a href="#TOP">&#x25B2</a></h2><p><b> 1.</b> Nature, Scope and Sources of Administrative Law</p><p><b> 2. </b> Administrative Law and Rule of Law</p><p><b> 3. </b> Principles of Separation of Power: Practice, Control andBalance</p><p><b> 4.</b> Delegated Legislation and its Limitation</p><p><b> 5. </b> Administrative Discretion</p><p><b> 6.</b> Principles of Natural Justice</p><p><b> 7.</b> Judicial Review of Administrative Actions</p><p><b> 8.</b> Quasi Judicial Bodies, Administrative Tribunals andAdministrative Courts</p></div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"><h2>International Law <a href="#TOP">&#x25B2</a></h2><p><b> 1. </b> Nature, Scope and Principles of Public and PrivateInternational Law</p><p><b> 2.</b>Interrelationship between International and National Law: Monism andDualism</p><p><b> 3. </b>International Treaty & its Implementation</p><p><b> 4. </b> Interrelationship between International Human Rights andHumanitarian Law:itsUse & Limitation</p><p><b> 5.</b> Local and Universal Jurisdiction of International Law</p><p><b> 6. </b>Position of International Law in National Law and itsUse</p><p></div>
+  </div>
+  <div class="row">
+<div class="column" style="background-color:#bbb;"> <h2 id="CRL"> Criminal Law <a href="#TOP">&#x25B2</a></h2> <p><b> 1.</b> General Principles Regarding Criminal Justice and Punishment </p> <p> <b> 2. </b> Criminal Conspiracy, Attempt, Abetment and Accomplishment </p> <p> <b> 3. </b> Aggravating and Mitigating Factor of an Offence </p> <p> <b> 4. </b> Homicide </p> <p> <b> 5.</b> Offence against Public peace and justice </p> <p> <b> 6.</b> Offences against Public Interest, Health, Safety, Convenience and Morals </p> <p> <b> 7.</b> Offences Relating to Arms, Ammunitions and Explosives </p> <p> <b> 8.</b> Offences against National and Public Heritages </p> <p> <b> 9. </b> Offences Relating to Discrimination and Other Degrading Treatment </p> <p> <b> 10.</b> Offences Relating to Marriage (child marriage, polygamy) </p> <p> <b> 11.</b> Offences against Protection of Pregnancy </p> <p> <b> 12.</b> Offences Relating to Hurt or Grievous Hurt </p> <p> <b> 13. </b> Offences Relating to Unlawful Detention </p> <p> <b> 14.</b> Offences Relating to Enforced Disappearance </p> <p> <b> 15.</b> Offences Relating to Kidnapping or Taking of Hostages </p> <p> <b> 16.</b> Sexual Offences </p> <div class="tab1"> <p><b> a. </b> Rape</p> <p> <b> b.</b> Incest </p> <p> <b> c.</b> Sexual Abuse </p> <p> <b> d. </b> Child Sexual Abuse </p> </div> <p> <b> 17.</b> Offenses related to Theft and Robbery </p> <p> <b> 18.</b> Offences Relating to Cheating, Criminal Breach of Trust and Extortion </p> <p> <b> 19. </b> Offences against Individual Privacy and Prestige </p> <p> <b> 20.</b> Offence Relating to Defamation </p> <p> <b>21.</b> Offences Relating to Weights and Measures </p> <p> <b> 22.</b> Offences Related to Insurance </p> <p> <b> 23. </b> Banking Offences </p> <p> <b> 24. </b> Cyber Crime </p> <p> <b> 25.</b> Offences related to Vehicle Traffic </p> <p> <b> 26. </b> Offence Related to Gender Violence </p> <p> <b> 27.</b> Organized crime (Human Trafficking, Drug Trafficking and Money Laundering) </p> <p> <b>28.</b> Offence related to Corruption </p> <p> </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"> <h2 id="CIL">Civil Law <a href="#TOP">&#x25B2</a></h2> <p><b> 1. </b> General Principle of Civil Law </p> <p> <b> 2.</b> Provision Relating to Person </p> <p> <b> 3.</b> Family Law </p> <div class="tab1"> <p><b> a. </b> Provisions Relating to Marriage & Divorce</p> <p> <b> b.</b> Provisions Relating to Maternal and Paternal Authority System </p> <p> <b> c.</b> Provisions Relating to Guardianship & Curatorship </p> <p> <b> d. </b> Provisions Relating to Adoption </p> <p> <b> e.</b> Provisions Relating to Relationship of Parents and Children </p> <p> <b> f. </b> Provisions Relating to Partition </p> <p> <b> g. </b> Provisions Relating to Succession </p> </div> <p> <b> 4.</b> Relating to Property </p> <div class="tab1"> <p><b> a. </b> Principles Related to Property & Types of Property </p> <p> <b> b. </b> Provisions Relating to Ownership and Possession </p> <p> <b> c.</b> Instrument Passing Arrangement </p> <p> <b> d. </b> Provision related to the use, transfer and aquisition of Property </p> <p> <b> e.</b> Provisions Relating to Cultivation, Possession and Registration of Land </p> <p> <b>f.</b> Provisions Relating to Trusts </p> <p> <b> g.</b> Provisions Relating to Usufruct </p> <p> <b> h. </b> Provisions Relating to Servitudes </p> <p> <b> i.</b> Provisions Relating to House Rent </p> <p> <b> j.</b> Provisions Relating to Gift and Donation </p> <p> <b> k. </b> Provisions Relating to Mortgage & Pre-emption of Immovable Property </p> <p> <b> l.</b> Provisions Relating to Transactions </p> <p> </p> </div> <p> <b> 5.</b> Provision Relating to Tort </p> <p> <b> 6.</b> Provision relating to Compensation </p> <p> </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"> <h2 id="CML"> Commercial Law <a href="#TOP">&#x25B2</a></h2> <p><b> 1.</b> Natural and legal person </p> <p> <b> 2.</b> Establishment, registration and operation of private / public and non-profit company </p> <p> <b> 3.</b> Patents, designs and trademarks </p> <p> <b> 4. </b> Provision related to Contract </p> <p> <b> 5.</b> Labor law </p> <p> <b> 6. </b> Alternative Dispute Resolution Measures </p> <p> <b> 7. </b> General Principles of Tax Law </p> <p> <b> 8.</b> Law related to Environmental Protection </p> <p> </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"><h2 id="EVL"> Evidence Law <a href="#TOP">&#x25B2</a></h2> <p><b> 1.</b> Fact in Issue & Relevent Fact</p> <p> <b>2.</b> Facts not required to examine the evidence </p> <p> <b> 3. </b> Facts to be taken into judicial notice and facts to be presumed by the court </p> <p> <b> 4.</b> Facts to be taken and not to be taken as evidence </p> <p> <b> 5. </b> The burden of proof </p> <p> <b> 6. </b> Presentation & Examination of evidence </p> <div class="tab1"> <p><b> a.</b> Written and Oral evidence</p> <p> <b> b. </b> Witness Evidence </p> <p> <b> c.</b> Material (Dasi) evidence </p> <p> <b> d.</b> Expert opinion </p> </div> <p> <b> 7. </b> Evidential value of Dying Declaration </p> <p> <b> 8.</b> Use of evidence technology (polygraph, authentic assessment of audio-visual) </p> <p> <b> 9.</b> Estoppel </p> <p> </div>
+  </div>
+  <div class="row">
+<div class="column" style="background-color:#bbb;"><h2 id="PRL">Procedural Law <a href="#TOP">&#x25B2</a></h2><p><b> 1.</b> General Principles of Civil Procedure Law</p><p><b> 2. </b> Writ Procedure :</p><div class="tab1"><p><b> a.</b> Writ to be filed in District Court, High Court andSupreme Court</p><p><b> b.</b> Principle of Laches</p><p><b> c. </b> Interim Order</p><p> </p></div><p><b> 3.</b> Injunction Application and Interim Order</p><p><b> 4. </b> Provision related to Locus Standi</p><p><b> 5.</b>Provision related to Jurisdiction</p><div class="tab1"><p><b> a. </b> Concept andDoctrine of Jurisdiction</p><p><b> b . </b> Jurisdiction of District Court</p><p><b> c. </b> Jurisdiction of the High Court</p><p><b> d. </b> Ordinary and Extraordinary Jurisdiction of theSupremeCourt</p><p><b> e.</b>Jurisdiction of Special Court</p><p><b> f. </b> Extra-territorial Jurisdiction</p><p> </p></div><p><b> 6.</b> Arrangement regarding Court Fee</p><p><b>7.</b> Provision regarding filing of Complaint and Claims</p><p><b> 8. </b> Statement of Defence and Counter Claim</p><p><b> 9.</b> Provision regarding Refusal</p><p> </p><p><b> 10.</b> Doctrine of Limitation</p><p><b> 11. </b> Provision regarding Time-limit &Date of Presence</p><p><b> 12. </b> Provision regarding Attorney:</p><div class="tab1"><p><b> a. </b> Ordinary Attorney</p><p><b> b. </b> Authorized Attorney</p><p><b> c. </b> Revocation of Attorney</p><p> </p></div><p><b> 13.</b> General, Summary & Special Procedure</p><p><b> 14.</b> Provision regarding Interloculatory & InterimOrder</p><p><b> 15.</b> Provision regarding Postponment and Transfer ofCase</p><p><b> 16.</b> Provision regarding Precedent</p><p> <b> 17.</b>Proceedings of StateCriminal Case</p><div class="tab1"><p><b> a. </b> Information or Complain related to the Offence</p><p><b> b.</b> Procedures to befollowed for investigation</p><p><b> c.</b> Provision related to Arrest & to release Arrestnote and Summon</p><p><b> d. </b> Arrangement for authenticating the statement of thevictim</p><p><b> e. </b> Basis forExtension of Time-Limit</p><p><b> f.</b> Procedures to be followed while filing the ChargeSheet</p><p><b> g. </b> Preliminary proceedings for the Case</p><p><b> h.</b>Defendent's Statement before the Court</p><p><b> i.</b> Jail-Bail, Security and Guarantee arrangements</p><p><b>j. </b> Legal Provisions to file the application against Jail-BailOrder in HigherCourt</p><p> </p></div><p><b> 18.</b> Open Bench & Incamera Hearing</p><p><b>19.</b> Provisions related to Withdrawl of Case, Mediation andAgreement Paper</p><p><b> 20. </b> Provision related to Hearing, Pleading and Judgment</p><p><b> 21. </b> Provisions regarding Implementation of Final Order andDecision</p><p><b> 22.</b> Provision related to Appeal</p><p><b> 23. </b> Provision related to revision and review ofcase</p><p><b> 24. </b> Implementation of Decision and Final Order</p><p><b>25.</b> Mutual Legal Assistance and Extradiction</p><p><b> 26.</b> Provision regarding AmicusCuriae</p><p><b> 27.</b> Provision related to Legal Aid</p></div>
+  </div>
+  <div class="row">
+<div class="column" style="background-color:#bbb;"><h2 id="CODE"> Nepal Bar Council & Code of Ethics for Legal Practitioners <a href="#TOP">&#x25B2</a></h2><p><b> 1. </b> Relations, Roles and Differences of Nepal Bar CouncilandNepal Bar Association </p><p><b> 2. </b> Functions, Duties and Powers of Nepal Bar Council</p><p><b> 3. </b>Law Practitioners, the role of Law Practitioners andProvisions related tothe Code of Conduct</p><div class="tab1"><p><b> a. </b> Nepal Law Practitioners Council Act, 2050 </p><p><b> b. </b> Code of Conduct for Law Practitioners, 2051</p><p><b> c. </b> Law Practitioner's Office Registration and OperationRules, 2069</p><p><b> d. </b> Nepal Law Practitioners' Disciplinary Committee(WorkingArrangements)Rules,2058</p><p><b> e. </b> Fundamental Principles of the United Nations on theRoleof LawPractitioners,1990</p></div><b> 4. </b> Guidelines on Paid Law Practitioners, 2072 </p><p><b> 5. </b> Code of Conduct for Public Prosecutors, 2075</p><p><b> 6. </b> Code of Conduct for Judges, 2074</p></div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"> <h2 id="MISSIL">Case File Study and Drafting of Legal Instruments <a href="#TOP">&#x25B2</a></h2> <p><b> 1. </b> Linguistic Knowledge for Legal Purposes</p> <p> <b> 2. </b> Drafting of Instruments: </p> <div class="tab1"> <p><b> a. </b> Writ Petition</p> <p> <b> b. </b> Written Statement </p> <p> <b> c. </b> Injunction Application </p> <p> <b> d. </b> First Information Report (FIR) </p> <p> <b> e. </b> Statement to Defendents </p> <p> <b> f. </b> Charge Sheet </p> <p> <b> g. </b> Jail-Bail Hearing </p> <p> <b> h. </b> Plaint </p> <p> <b> i. </b> Statement of Defence </p> <p> <b> j. </b> Attorney Deed </p> <p> <b> k. </b> Appeal Statement </p> <p> <b> l.</b> Case Revision Application </p> <p> <b> m. </b> Case Review Application </p> <p> <b> n. </b> Pleading Note </p> <p> <b> o.</b> Mediation Application </p> <p> <b> p. </b> Application for the extention of date of presence & time- limit </p> <p> <b> q. </b> Application for Rokka (Hold) and overturning of improper order </p> <p> <b> r. </b> Application for the Implementation of Court Decision </p> </div> <p> <b> 3. </b> Knowledge regarding subject matter of Case File </p> <div class="tab1"> <p><b> a. </b> Examination, cross-examined and re-examination </p> <p> <b> b. </b> Written Evidence & its Examination </p> <p> <b> c. </b> Ratio-Decidendi </p> </div> <p> <div class="tab2"> <b> i. </b> Question of fact & question of law in a case</p> <p> <b> ii. </b> Relevent Evidence </p> <p> <b> iii. </b> The doctrine propounded by the Supreme Court </p> </div></div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#bbb;"> <h2> Only for Sample <a href="#TOP">&#x25B2</a></h2> <p>xyz <a href="#fn20230209T2217" aria-describedby="footnote-label" id="fn20230209T2218"></a> Continue your text here</p> </div>
+  </div>
+  </div>
+  <footer>
+    <h2 class="visually-hidden" id="footnote-label">Endnotes</h2>
+    <ol> <li id="fn20230209T2217">Type footnote here. <a href="https://shivaprasadacharya.github.io/BarSyllables.git.io/#EVL" target="_blank">See EVL</a> <a href="#fn20230209T2218" aria-label="Back to content">[&#x21A9;]</a></li> </ol>
+  </footer>
+  <p id="developedby"><u><b>Developed By:</b></u><br>
+    Debaka Timilsina (M.A, M.Ed; LL.B) <br>
+    Shiva Prasad Acharya (M.Sc.; LL.M)<br>
+    श्रीपञ्चमि, २०७९ <a id="BOTTOM" href="#TOP">&#x25B2</a></p>
+</body>
+</html>
+<!-- Bar Syllables for 31th Exam in English -->
